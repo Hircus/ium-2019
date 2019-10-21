@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ResultActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dati inseriti"
+            android:textSize="36dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CONFERMA"
+            android:id="@+id/confermaText"
+            android:gravity="center"
+            android:textSize="30dp"
+            android:visibility="visible"
+            android:background="@color/verde" />
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+
+        <!-- Nome -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nome:"
+            android:textSize="20dp"/>
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="5dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/attrNome"
+            android:text="Paolo"
+            android:textSize="30dp"/>
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="5dp" />
+
+        <!-- Cognome -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cognome:"
+            android:textSize="20dp"/>
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="5dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/attrCognome"
+            android:text="Bianchi"
+            android:textSize="30dp"/>
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="5dp" />
+
+        <!-- Data di nascita -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Data di nascita:"
+            android:textSize="20dp"/>
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="5dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/attrData"
+            android:text="01/01/1995"
+            android:textSize="30dp"/>
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="5dp" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/conferma"
+            android:text="OK"
+            android:textSize="36dp" />
+    </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
